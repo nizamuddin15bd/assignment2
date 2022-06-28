@@ -57,3 +57,51 @@ nav ul li a {
     font-family: 'Poppins';
     border-radius: 41px;
 }
+
+.company-logo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    margin: 100px 0;
+    border: 1px solid black;
+    padding: 40px 0;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+
+.star p {
+    margin-left: 8px;
+    font-weight: 700;
+    color: #5E6366;
+}
+
+.star .fa-solid {
+    color: #FB8200;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.box1 {
+    max-width: 329px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.see-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.see-more a {
+    text-decoration: none;
+    font-family: 'Poppins' sans-serif;
+    color: rgba(224, 44, 109, 0.87);
+}
