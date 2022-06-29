@@ -13,7 +13,7 @@ nav h4 {
 
 nav ul li {
     list-style-type: none;
-    display: inline-block;
+    display: inline;
 }
 
 nav ul li a {
@@ -38,8 +38,11 @@ nav ul li a {
 }
 
 .influencer p {
-    max-width: 70%;
     font-family: 'Poppins', sans-serif;
+}
+
+.influencer img {
+    width: 100%;
 }
 
 .influencer h1 {
@@ -62,9 +65,14 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     align-items: center;
+    justify-content: center;
     margin: 100px 0;
     border: 1px solid black;
     padding: 40px 0;
+}
+
+.company-logo a img {
+    width: 60%;
 }
 
 .star {
@@ -82,6 +90,12 @@ nav ul li a {
     color: #FB8200;
 }
 
+.collection h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
 .box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,6 +109,22 @@ nav ul li a {
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+}
+
+.box1 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.box1 h4 {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box1 p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #787885;
 }
 
 .see-more {
@@ -121,7 +151,6 @@ nav ul li a {
 }
 
 .featured p {
-    max-width: 70%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -152,4 +181,53 @@ nav ul li a {
 
 .brand {
     font-size: 25px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .influencer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .influencer img {
+        margin-top: 50px;
+    }
+
+    .company-logo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .featured img {
+        width: 100%;
+    }
+
+    nav {
+        background-color: #FB8200;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+    nav ul li a {
+        color: #fff;
+        background-color: #E02C6D;
+        padding: 10px
+    }
 }
