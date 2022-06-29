@@ -130,6 +130,7 @@ nav ul li a {
 .see-more {
     display: flex;
     justify-content: flex-end;
+    margin-top: 40px;
 }
 
 .see-more a {
@@ -220,9 +221,7 @@ nav ul li a {
     }
 
     nav ul li {
-        display: block;
-        margin: 20px;
-        box-sizing: border-box;
+        display: none;
     }
 
     nav ul li a {
